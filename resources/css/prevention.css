@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 1) !important;
+}
+
+.parallax-main {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-top: 360px;
+    padding-bottom: 360px;
+    background-image: url(../images/parallax-mask.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top center;
+}
+
+.parallax-one {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-top: 360px;
+    padding-bottom: 360px;
+    background-image: url(../images/parallax-sanatize.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top center;
+}
+
+.parallax-two {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-top: 360px;
+    padding-bottom: 360px;
+    background-image: url(../images/parallax-social-distancing.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top center;
+}
+
+.parallax-three {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-top: 360px;
+    padding-bottom: 360px;
+    background-image: url(../images/parallax-dont-touch.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top center;
+}
+
+.parallax-four {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-top: 360px;
+    padding-bottom: 360px;
+    background-image: url(../images/parallax-sneeze.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top center;
+}
+
+.parallax-five {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-top: 360px;
+    padding-bottom: 360px;
+    background-image: url(../images/parallax-stay-home.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top center;
+}
+
+.parallax-six {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-top: 360px;
+    padding-bottom: 360px;
+    background-image: url(../images/parallax-call.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top center;
+}
+
+.parallax-seven {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-top: 360px;
+    padding-bottom: 360px;
+    background-image: url(../images/parallax-orders.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top center;
+}
+
+.prevention {
+    background-color: rgba(0, 0, 0, 0.9);
+    ;
+}
+
+.prevention h1 {
+    font-size: 50px;
+    text-align: center;
+    padding: 30px 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.initial {
+    font-size: 65px;
+    font-weight: 700;
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+    padding-right: 2px;
+}
+
+.heading-parallax {
+    color: white;
+    position: absolute;
+    right: 3%;
+    bottom: 26%;
+}
+
+.heading-parallax h1 {
+    text-align: center;
+    font-size: 6rem;
+}

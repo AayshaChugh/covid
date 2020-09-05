@@ -1,0 +1,221 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body {
+	overflow-x: hidden;
+}
+
+
+
+.header-nav li {
+	margin-right: 11px;
+	transition: 0.2s ease;
+
+}
+
+.header-nav li.active a {
+	font-weight: bold !important;
+	color: white !important;
+}
+
+.parallax {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+		url('../images/corona-red.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 60vh;
+	color: white;
+	background-attachment: fixed;
+
+
+	/* font-size: 100px !important;
+	font-weight: 100 !important;
+	 */
+}
+
+/* .header-heading {
+	position: relative;
+	top: 70px;
+} */
+
+.example {
+	background-color: black;
+	height: 500px;
+}
+
+.navbar {
+	border-bottom: 2px white solid;
+	background-color: rgba(0, 0, 0, 0.9);
+	color: white;
+}
+
+#navbarSupportedContent a {
+	color: whitesmoke;
+	transition: all 0.2s ease;
+}
+
+#navbarSupportedContent a:hover {
+	color: indianred !important;
+	text-decoration: none;
+	text-shadow: 0 0 1px white;
+	letter-spacing: 1.6px;
+}
+
+
+
+@media (max-width: 767px) {
+	.collapse li {
+		border-bottom: 1px grey solid;
+	}
+
+	.navbar {
+		background-color: rgba(0, 0, 0, 0.7);
+	}
+
+}
+
+.header-button {
+	border-radius: 100px;
+	padding: 10px 30px;
+	font-size: 1.3rem;
+	line-height: 1.4;
+	outline: none;
+	font-weight: 700;
+	border: 1px solid white;
+	transition: 0.2s ease;
+	color: white;
+}
+
+
+.header-button:hover {
+	cursor: pointer;
+	background-color: black;
+	color: indianred !important;
+	text-shadow: 0 0 2px black;
+	box-shadow: 0 0 2px indianred;
+	text-decoration: none;
+
+}
+
+.info-odd {
+	background-color: black;
+}
+
+#hello1 {
+	height: 100%;
+	width: 170%;
+}
+
+#info-image1 {
+	overflow: hidden;
+	padding-left: 10%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	transition: all 0.5s ease-in-out;
+}
+
+
+.info-odd-inner {
+	height: 450px;
+	margin: 10vh auto;
+	/* margin-left: 30px; */
+	position: relative;
+	left: 30px;
+	border-radius: 40px;
+
+}
+
+.info-inner-heading {
+	font-size: 3.671vw;
+	transition: 0.3s ease;
+}
+
+/* .info-inner-heading:hover {
+	font-size: 50px;
+	letter-spacing: 0.1rem;
+	transition: 0.3s ease;
+} */
+
+.pill-odd:hover {
+	background-color: white;
+	color: #D9534F;
+	box-shadow: 0 0 3px black;
+}
+
+.info-even {
+	background-color: white;
+}
+
+.info-even-inner {
+	height: 450px;
+	margin: 10vh auto;
+	/* margin-left: 30px; */
+	position: relative;
+	right: 30px;
+	border-radius: 40px;
+}
+
+#hello2 {
+	height: 106%;
+	width: auto;
+	position: relative;
+	right: 41%;
+	bottom: 7%;
+}
+
+#info-image2 {
+	overflow: hidden;
+	padding-right: 10%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.pill-even:hover {
+	background-color: black;
+	color: #D9534F;
+	box-shadow: 0 0 3px white;
+}
+
+
+@media (max-width: 767px) {
+
+	#info-image1,
+	#info-image2 {
+		display: none;
+	}
+}
+
+.info-odd-inner p,
+.info-even-inner p {
+	font-size: 1.764vw;
+}
+
+#hello3 {
+	height: 100%;
+	width: 170%;
+	position: relative;
+	right: 35%;
+	bottom: 7%;
+}
+
+#info-image3 {
+	overflow: hidden;
+	padding-right: 10%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.by-line {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 4vh;
+	background-color: lavender;
+	font-weight: 600;
+}

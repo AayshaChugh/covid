@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-4.5.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/cff79052c2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../css/assessment.css">
+
+    <title>The Covid-19 Project | Self-Assesment</title>
+</head>
+
+<body>
+    <!-- *********** NAVIGATION BAR*************** -->
+    <div class="header d-flex flex-column">
+
+        <div class="header-nav">
+
+            <nav class="navbar navbar-expand-lg navbar-expand-md fixed-top navbar-dark">
+                <div class="container text-uppercase p-2">
+                    <a class="navbar-brand d-lg-none d-xl-none d-md-none font-weight-bold text-white" href="#">The
+                        Covid-19 Project</a>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav m-auto " style="font-size: 2vw">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="../../index.html">Home</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="../html pages/covid.html">Covid-19</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html pages/prevention.html">Preventions</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../html pages/assessment.html">Self-Assessment </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html pages/donate.html">Want To Donate?</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+        <div class="navbar-background" style="height:90px"></div>
+    </div>
+    <!-- ***************Navigation bar ends************** -->
+
+    <main>
+        <div class="heading">
+            <h1>Covid-19 Self-Assessment Test </h1>
+            <p>*Does not fully function as PHP was not known.</p>
+        </div>
+        <div class="assessment-form visible" id="assessment-form0">
+            <form>
+                <fieldset>
+                    <legend>Your Details:</legend>
+                    <br>
+                    <input type="text" id="fname" name="fname" placeholder="Enter First Name" required>
+                    <br><br>
+
+                    <input type="text" id="lname" name="lname" placeholder="Enter Last Name" required>
+                    <br> <br>
+
+
+                    <input type="tel" id="mobile" name="mobile" placeholder="Contact No (ex- 9876543210)">
+                    <br><br>
+                    <input type="email" id="email" name="email" placeholder="Email Id (example@example.com)">
+                    <br><br>
+
+                    <label for="gender">Sex: </label>
+                    <br>
+                    <input type="radio" name="gender" required>
+
+                    <label for="gender" class="gender">Male</label>
+
+                    <input type="radio" name="gender">
+                    <label for="gender" class="gender">Female</label>
+
+                    <input type="radio" name="gender">
+                    <label for="gender" class="gender">Others</label>
+                    <br>
+
+                    <label for="DOB">Date Of Birth: </label>
+                    <br>
+                    <input type="date" id="dob" name="dob" required>
+                    <br><br>
+
+                    <label for="blood-group">Blood Group: </label>
+                    <br>
+                    <input list="blood-group" name="blood-group" placeholder=" Example: O+">
+                    <datalist id="blood-group">
+                        <option value="O+">
+                        <option value)="O-">O-</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                    </datalist>
+                    <br><br>
+                    <div class="next-button">
+                        <div id="next" class="btn btn-danger" onclick="next(1)">
+                            Next
+                        </div>
+                    </div>
+                </fieldset>
+
+            </form>
+        </div>
+
+        <div class="assessment-form" id="assessment-form1">
+            <form action="#">
+                <fieldset>
+                    <legend>Question 1:</legend>
+                    <br>
+
+                    <h4>Are you experiencing any of the following symptoms?</h4><br>
+                    <label for="q1o1">
+                        <input type="checkbox" name="q1" id="q1o1"> Cough
+                    </label>
+                    <br>
+                    <label for="q1o2">
+                        <input type="checkbox" name="q1" id="q1o2"> Fever
+                    </label>
+                    <br>
+                    <label for="q1o3">
+                        <input type="checkbox" name="q1" id="q1o3"> Difficulty in Breathing
+                    </label>
+                    <br>
+                    <label for="q1o4">
+                        <input type="checkbox" name="q1" id="q1o4"> None of the Above
+                    </label>
+                    <br><br>
+                    <div class="form-buttons ">
+                        <div class="reset-button">
+                            <div id="next" class="btn btn-danger" onclick="reset()">
+                                Reset Form
+                            </div>
+                        </div>
+                        <div class="next-button">
+                            <div id="next" class="btn btn-danger" onclick="next(2)">
+                                Next
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="assessment-form " id="assessment-form2">
+            <form action="#">
+                <fieldset>
+                    <legend>Question 2:</legend>
+                    <br>
+
+                    <h4>Have you ever had any of the following?</h4><br>
+                    <label for="q2o1">
+                        <input type="checkbox" name="q2" id="q2o1"> Diabetes
+                    </label>
+                    <br>
+                    <label for="q2o2">
+                        <input type="checkbox" name="q2" id="q2o2"> Hypertension
+                    </label>
+                    <br>
+                    <label for="q2o3">
+                        <input type="checkbox" name="q2" id="q2o3"> Lung Disease
+                    </label>
+                    <br>
+                    <label for="q2o4">
+                        <input type="checkbox" name="q2" id="q2o4"> Heart Disease
+                    </label>
+                    <br>
+                    <label for="q2o5">
+                        <input type="checkbox" name="q2" id="q2o5"> None Of The Above
+                    </label>
+
+                    <br><br>
+                    <div class="form-buttons ">
+                        <div class="reset-button">
+                            <div id="next" class="btn btn-danger" onclick="reset()">
+                                Reset Form
+                            </div>
+                        </div>
+                        <div class="next-button">
+                            <div id="next" class="btn btn-danger" onclick="next(3)">
+                                Next
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+
+        <div class=" assessment-form " id="assessment-form3">
+            <form action="#">
+                <fieldset>
+                    <legend>Question 3:</legend>
+                    <br>
+
+                    <h4>Have you ever traveled anywhere internationally in the last 28-45 days?</h4><br>
+                    <label for="q3o1">
+                        <input type="radio" name="q3" id="q3o1"> Yes
+                    </label>
+                    <br>
+                    <label for="q3o2">
+                        <input type="radio" name="q3" id="q3o2"> No
+                    </label>
+                    <br><br>
+                    <div class="form-buttons ">
+                        <div class="reset-button">
+                            <div id="next" class="btn btn-danger" onclick="reset()">
+                                Reset Form
+                            </div>
+                        </div>
+                        <div class="next-button">
+                            <div id="next" class="btn btn-danger" onclick="next(4)">
+                                Next
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        <div class=" assessment-form " id="assessment-form4">
+            <form action="#">
+                <fieldset>
+                    <legend>Question 4:</legend>
+                    <br>
+
+                    <h4>Which of the following apply to you?</h4><br>
+                    <label for="q4o1">
+                        <input type="radio" name="q4" id="q4o1"> I have recently interacted or lived with someone who
+                        has tested positive for Covid-19.
+                    </label>
+                    <br>
+                    <label for="q4o2">
+                        <input type="radio" name="q4" id="q4o2"> I am a healthcare worker and I examined a Covid-19
+                        confirmed case without protective gear.
+                    </label>
+                    <br>
+                    <label for="q4o3">
+                        <input type="radio" name="q4" id="q4o3"> None of the above
+                    </label>
+                    <br><br>
+                    <div class="form-buttons ">
+                        <div class="reset-button">
+                            <div id="next" class="btn btn-danger" onclick="reset()">
+                                Reset Form
+                            </div>
+                        </div>
+                        <div class="next-button">
+                            <div id="next" class="btn btn-danger" onclick="next(5)">
+                                Submit
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        <div id="assessment-form5" class="assessment-form">
+            <div class="thanku">
+                <h1 id="Thanks">Thank You For Your Response</h1>
+                <h3>Your risk status of being positive to Covid-19 will be sent to your email.</h3>
+            </div>
+            <div class="thanku-button">
+                <div id="next" class="btn" onclick="reset()">
+                    Take Another Test
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+
+
+    <script>
+        let validateForm = index => {
+            if (index == 1) {
+                currentForm = document.getElementById("assessment-form0");
+                inputFields = currentForm.getElementByTagName("input")
+            }
+        }
+
+        let reset = () => {
+            let allForms = document.querySelectorAll('.assessment-form');
+            allForms.forEach(e => {
+                e.classList.remove('visible');
+            });
+            let nowVisible = document.getElementById('assessment-form0');
+            nowVisible.classList.add('visible');
+        };
+
+
+        let next = index => {
+            let allForms = document.querySelectorAll('.assessment-form');
+            allForms.forEach(e => {
+                e.classList.remove('visible');
+            });
+            let nowVisible = document.getElementById('assessment-form' + index);
+            nowVisible.classList.add('visible');
+        };
+    </script>
+
+</body>
